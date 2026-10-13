@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <!-- 設定文件語系為繁體中文，讓瀏覽器正確處理中文內容。 -->
+  <meta charset="UTF-8">
+  <!-- 設定響應式 viewport，讓畫面適合手機、平板與桌面裝置。 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- 設定瀏覽器分頁標題。 -->
+  <title>p5.js 程式設計簡易測驗</title>
+  <!-- 預先連線到 Google Fonts 主服務，以減少字型載入延遲。 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- 預先連線到 Google Fonts 靜態檔案服務。 -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- 只載入一次使用者指定的 Noto Sans HK 與 Bitcount Ink 字型連結。 -->
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Noto+Sans+HK:wght@100..900&display=swap" rel="stylesheet">
+  <!-- 設定頁面基本樣式，避免畫布外出現空白、捲軸或觸控捲動。 -->
+  <style>
+    /* 讓所有元素的寬高計算包含內距與邊框。 */
+    * {
+      box-sizing: border-box;
+    }
+
+    /* 讓 HTML 與 body 填滿瀏覽器視窗。 */
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #f4f7f8;
+    }
+
+    /* 以 Noto Sans HK 作為中文內容的預設字型。 */
+    body {
+      font-family: "Noto Sans HK", sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    /* 讓 p5.js 畫布以區塊顯示，並停用瀏覽器預設觸控手勢。 */
+    canvas {
+      display: block;
+      touch-action: none;
+    }
+  </style>
+  <!-- 載入 p5.js 核心函式庫。 -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
+  <!-- 載入本專案的測驗程式，defer 讓 HTML 解析完成後再執行。 -->
+  <script src="sketch.js" defer></script>
+</head>
+<body>
+  <!-- p5.js 會在 body 中自動建立全螢幕畫布。 -->
+</body>
+</html>
